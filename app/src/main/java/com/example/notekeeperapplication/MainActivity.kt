@@ -14,16 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            var textDisplayValue = null
-            val originalValue = textDisplayValue.text.toString().toInt()
-            val newValue = originalValue * 2
-            textDisplayValue.text = newValue.toString()
-            Snackbar.make(view, "value $originalValue changed to $newValue", Snackbar.LENGTH_LONG)
-                    .show()
 
-
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
