@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
                 android.R.layout.simple_spinner_item,
                 dm.courses.values.toList())
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        
-        spinnerCourses.adapter = adapterCourses
+
+        // spinnerCourses.adapter = adapterCourses
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
